@@ -30,9 +30,25 @@
 
                 <form action="#" method="POST">
                     <div class="box-input">
-                        <label for="title">Título do anúncio: <span class="required-field">*</span></label>
+                        <label for="title">Título do anúncio:
+                            <span class="required-field">*</span>
+                        </label>
 
                         <input id="titulo" class="block" type="text" name="title" placeholder="Defina um título para seu veículo" minlength="1" maxlength="45" required>
+
+                        <input type="submit" class="button-submit" value="Cadastrar">
+                    </div>
+                    <div class="box-input">
+                        <label for="price">Preço do Veículo:
+                            <span class="required-field">*</span>
+                            <input type="number" name="price" id="price" class="block" required>
+                        </label>
+                    </div>
+                    <div class="box-input">
+                        <label for="description">Descrição:
+                            <span class="required-field">*</span>
+                        </label>
+                        <textarea name="description" id="descricao" cols="30" rows="10"></textarea>
                     </div>
                 </form>
 
