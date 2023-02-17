@@ -14,11 +14,27 @@ h1, h2, h3, h4, h5{
     color: #333;
 }
 
+h1{
+    margin: 0;
+    font-weight: 700;
+}
+
 p, label{
     color: #444;
 }
 
+p{
+    margin-bottom: 30px;
+}
+
+#subtitle{
+    font-weight: 300;
+    font-style: italic;
+}
+
+
 input{
+    margin-top: 10px;
     border: 1px solid transparent;
     border-bottom: 1px solid #CCC;
     padding: 10px 0px;
@@ -26,12 +42,18 @@ input{
 
 input[type=text], input[type=number], input[type=date], input[type=file]{
     width: 400px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.123);
+    
 }
 
 textarea{
     padding: 10px 5px;
     width: 400px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.151);
+    border: 1px solid grey;
+    border-radius: 5px;
 }
+
 
 header{
     height: 160px;
@@ -44,4 +66,98 @@ header > h3{
     letter-spacing: 1px;
     margin-top: 0;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.329);
+}
+
+.form-container{
+    background-color: #FFF;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    top: -62px;
+    transition: 0.5s;
+}
+
+.form-container:hover{
+    transition: 0.5s;
+    box-shadow: 0 0 15px rgba(60, 35, 219, 0.151);
+}
+
+.form-header{
+    border: 1px solid #DFDFDF;
+    height: 60px;
+}
+
+.form-header > p{
+    color: #673AB7;
+    border-bottom: 2px solid #673AB7;
+    width: 100px;
+    text-align: center;
+    margin: auto;
+    text-transform: uppercase;
+    height: 60px;
+    line-height: 60px;
+}
+
+.form-body{
+    padding: 30px;
+}
+
+
+
+.required-field{
+    color: crimson;
+}
+
+.box-input{
+    margin-bottom: 30px;
+}
+
+.block{
+    display: block;
+}
+
+.optional-box{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.optional-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+.roxo{
+    font-size: 16px;
+    margin-right: 25px;
+    width: 140px;
+    font-weight: bold;
+    padding: 12px;
+    background-color: #673AB7;
+    color: #FFF;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.button-submit{
+    border-radius: 15px 0px;
+    transition: 0.4s;
+}
+
+.button-submit:hover{
+    transition: 0.4s;
+    border: 2px solid #673AB7;
+    background-color: #FFF;
+    color: #673AB7;
+}
+
+.button-reset{
+    border-radius: 0px 15px;
+    transition: 0.4s;
+}
+
+.button-reset:hover{
+    transition: 0.4s;
+    border: 2px solid #673AB7;
+    background-color: #FFF;
+    color: #673AB7;
 }
