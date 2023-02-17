@@ -3,13 +3,45 @@
 }
 
 body{
-  
-    font-family: 'Roboto', arial, sans-serif;
-    background-color: ;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Roboto', arial, helvetica, sans-serif;
+    background-color: #efe8fa;
 }
 
-h3{
-    background-color: slateblue;
+h1, h2, h3, h4, h5{
+    color: #333;
+}
+
+p, label{
+    color: #444;
+}
+
+input{
+    border: 1px solid transparent;
+    border-bottom: 1px solid #CCC;
+    padding: 10px 0px;
+}
+
+input[type=text], input[type=number], input[type=date], input[type=file]{
+    width: 400px;
+}
+
+textarea{
+    padding: 10px 5px;
+    width: 400px;
+}
+
+header{
+    height: 160px;
+    padding: 20px;
+    background-color: #673AB7 ;
+}
+
+header > h3{
     color: white;
+    letter-spacing: 1px;
+    margin-top: 0;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.329);
 }
-
